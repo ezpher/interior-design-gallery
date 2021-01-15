@@ -1,0 +1,38 @@
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 7px 10px;
+
+    background: #fff; 
+    color: #000;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+/* FLEX */
+
+.flex-container .row { 
+    display: flex;
+    flex-direction: row;
+} 
+
+.flex-container .row .column {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flex-container .row .column img {
+    height: 100%;
+    width: 97%; 
+    object-fit: cover;
+}
