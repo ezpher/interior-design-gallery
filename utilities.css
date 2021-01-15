@@ -33,6 +33,6 @@
 
 .flex-container .row .column img {
     height: 100%;
-    width: 97%; 
-    object-fit: cover;
+    width: 100%; 
+    object-fit: contain;
 }

@@ -118,8 +118,14 @@ img {
     padding: 50px;
 }
 
+#about .column-left,
+#about .column-right {
+    height: 80%;
+}
+
 #about .column-right h2 span {
     display: inline-block;
     padding-bottom: 2px;
     border-bottom: 5px solid #ffc300;
+
 }
