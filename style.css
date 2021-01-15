@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 
+
+
 /* Global Styles */
 
 * {
@@ -30,9 +32,21 @@ h1, h2, h3, h4 {
     margin: 15px 0;
 }
 
+h2 span {
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 5px solid #ffc300;
+}
+
+h4 {
+    font-weight: 500;
+}
+
 img {
     display: block;
 }
+
+
 
 /* NAVIGATION */
 
@@ -75,6 +89,7 @@ img {
 }
 
 
+
 /* HERO */
 
 #hero {
@@ -108,8 +123,8 @@ img {
 }
 
 #hero .hero-image .hero-blurb h4 {
-    font-weight: 500;
 }
+
 
 
 /* ABOUT */
@@ -120,12 +135,31 @@ img {
 
 #about .column-left,
 #about .column-right {
-    height: 80%;
+    height: 100%;
+    margin-bottom: -20%;
 }
 
-#about .column-right h2 span {
-    display: inline-block;
-    padding-bottom: 2px;
-    border-bottom: 5px solid #ffc300;
 
+
+/* RECENT WORK */
+
+#recent-work {
+    padding: 50px 20px 50px 50px;
+}
+
+#recent-work .row {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+#recent-work .row:last-child {
+    margin-top: 20px;
+}
+
+#recent-work .column-1,
+#recent-work .column-2,
+#recent-work .column-3 {
+    height: 100%;
+    width: 100%;
+    padding-right: 20px;
 }
