@@ -202,3 +202,16 @@ img {
     width: 100%;
     padding-right: 20px;
 }
+
+
+
+/* FOOTER */
+
+#main-footer {
+    min-height: 70px;
+    padding: 20px 0;
+    background: #2c2c2c;
+    color: #fff;
+    
+    text-align: center;
+}
