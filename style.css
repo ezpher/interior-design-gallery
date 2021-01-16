@@ -213,6 +213,12 @@ img {
 
 @media (max-width: 483px) {
 
+    /* NAVIGATION */
+
+    #main-nav ul {
+        flex-wrap: wrap;
+    }
+
     /* HERO */
 
     #hero .hero-image .hero-blurb {
