@@ -126,9 +126,6 @@ img {
     font-weight: 300;
 }
 
-#hero .hero-image .hero-blurb h4 {
-}
-
 
 
 /* ABOUT */
@@ -208,4 +205,140 @@ img {
     color: #fff;
     
     text-align: center;
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 483px) {
+
+    /* HERO */
+
+    #hero .hero-image .hero-blurb {
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+
+    /* GLOBAL */
+
+    h1, h2, h3, h4, p, i {
+        text-align: center;
+    }
+
+
+    /* FLEX */
+
+    .flex-container .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container .row .column,
+    .flex-container .row .column.width-1 
+    .flex-container .row .column.width-2 {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+
+    /* NAVIGATION */
+
+    #main-nav {
+        display: block;
+    }
+
+    #main-nav h1 { 
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #main-nav ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    /* HERO */
+
+    #hero .hero-image .hero-blurb {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+                
+        height: 285px;
+        max-width: 383px;
+        padding: 7px 10px;
+
+        text-align: center;
+    }
+
+    #hero .hero-image .hero-blurb h1 {
+        line-height: 1.1;
+    }
+
+
+    /* ABOUT */
+
+    #about .column-left,
+    #about .column-right {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    /* SERVICES */
+
+    #services .icon-parent {
+        padding-right: 0px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #services .icon-parent i {
+        padding: 25px;
+    }
+
+    #services .services-images {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    /* RECENT WORK */
+
+    #recent-work {
+        padding: 50px;
+    }
+
+    #recent-work .row {
+        min-height: none;
+        max-height: none;
+        height: 100%;
+    }
+
+    #recent-work .row:last-child {
+        margin-top: 0;
+    }
+
+    #recent-work .column-1,
+    #recent-work .column-2,
+    #recent-work .column-3 {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    
 }
