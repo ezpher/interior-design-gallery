@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="/utilities.css">
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <header id='main-header'>
-        <nav id='main-nav'>
-            <h1><a href="#">Baley</a></h1>
+<body id="home">
+    <header id="main-header">
+        <nav id="main-nav">
+            <h1><a href="#home">Baley</a></h1>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#recent-work">Projects</a></li>
             </ul>
         </nav>
 
@@ -26,7 +26,7 @@
                 <div class="hero-blurb">
                     <h1>Inspired Designs</h1>
                     <h4>With a minimalist touch</h4>
-                    <a href="#" class="btn">View Projects</a>
+                    <a href="#recent-work" class="btn">View Projects</a>
                 </div>
             </div>
         </section>
@@ -165,3 +165,25 @@
     </footer>
 </body>
 </html>
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" 
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+        crossorigin="anonymous">
+</script>
+
+<script>
+
+    // Smooth scrolling for anchor links
+    $('#main-nav a, .btn').on('click', function (e) {
+        e.preventDefault();
+
+        const hash = this.hash;
+        if (hash) {
+            
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 100
+            }, 800)
+        }
+    })
+</script>
